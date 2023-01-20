@@ -19,8 +19,8 @@
                 "height": 80
               },
               "position": {
-                "x": 158,
-                "y": 88
+                "x": 31,
+                "y": 113
               },
               "angle": 0,
               "id": "29637d13-592a-44ba-a0c3-092dc03a7ea6",
@@ -45,8 +45,8 @@
                 "height": 100
               },
               "position": {
-                "x": 264,
-                "y": 101
+                "x": 433,
+                "y": 95
               },
               "angle": 0,
               "id": "5e0a861a-1e0c-4369-9f2a-34a1d87e5b0f",
@@ -57,7 +57,7 @@
                   "class": "element-shape hasNoOpenThreats isInScope"
                 },
                 "text": {
-                  "text": "Front End"
+                  "text": "NGINX"
                 },
                 ".element-text": {
                   "class": "element-text hasNoOpenThreats isInScope"
@@ -71,8 +71,8 @@
                 "height": 100
               },
               "position": {
-                "x": 536,
-                "y": 1
+                "x": 851,
+                "y": 3
               },
               "angle": 0,
               "id": "638b68bd-f94b-4705-af53-6e4deccdd5de",
@@ -97,8 +97,8 @@
                 "height": 100
               },
               "position": {
-                "x": 598,
-                "y": 249
+                "x": 761,
+                "y": 348
               },
               "angle": 0,
               "id": "1d2ca3a5-7d92-44b4-a05a-a55f7923371f",
@@ -109,7 +109,7 @@
                   "class": "element-shape hasNoOpenThreats isInScope"
                 },
                 "text": {
-                  "text": "Web API"
+                  "text": "MControl-BE"
                 },
                 ".element-text": {
                   "class": "element-text hasNoOpenThreats isInScope"
@@ -127,13 +127,12 @@
                 "id": "5e0a861a-1e0c-4369-9f2a-34a1d87e5b0f"
               },
               "target": {
-                "x": 607,
-                "y": 268
+                "id": "1d2ca3a5-7d92-44b4-a05a-a55f7923371f"
               },
               "vertices": [
                 {
-                  "x": 519,
-                  "y": 201
+                  "x": 684,
+                  "y": 245
                 }
               ],
               "id": "cc47ed60-e4b4-48cf-981e-5347a1cf9249",
@@ -171,13 +170,12 @@
                 "id": "1d2ca3a5-7d92-44b4-a05a-a55f7923371f"
               },
               "target": {
-                "x": 330,
-                "y": 200
+                "id": "5e0a861a-1e0c-4369-9f2a-34a1d87e5b0f"
               },
               "vertices": [
                 {
-                  "x": 414,
-                  "y": 287
+                  "x": 595,
+                  "y": 303
                 }
               ],
               "id": "166ea3fd-e2d8-4735-aca0-e010ea198fb6",
@@ -217,11 +215,19 @@
               "target": {
                 "id": "638b68bd-f94b-4705-af53-6e4deccdd5de"
               },
-              "vertices": [],
+              "vertices": [
+                {
+                  "x": 706,
+                  "y": 122
+                }
+              ],
               "id": "e38371eb-294b-4e63-a223-a83f542870ae",
               "labels": [
                 {
-                  "position": 0.5,
+                  "position": {
+                    "distance": 0.5002230067520433,
+                    "offset": 0.04508866826014375
+                  },
                   "attrs": {
                     "text": {
                       "text": "Web Request\n(HTTP/S)",
@@ -250,16 +256,15 @@
               },
               "smooth": true,
               "source": {
-                "x": 545,
-                "y": 21
+                "id": "638b68bd-f94b-4705-af53-6e4deccdd5de"
               },
               "target": {
                 "id": "5e0a861a-1e0c-4369-9f2a-34a1d87e5b0f"
               },
               "vertices": [
                 {
-                  "x": 447,
-                  "y": 30
+                  "x": 656,
+                  "y": 33
                 }
               ],
               "id": "5aa29cc9-e6f7-4482-9acc-3f5da06891f6",
@@ -287,12 +292,130 @@
                   "class": "connection hasNoOpenThreats isInScope"
                 }
               }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 123,
+                "y": 147
+              },
+              "angle": 0,
+              "id": "636c635a-6893-435f-8a2c-6a363b9514a8",
+              "z": 9,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "MControl-FE"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "636c635a-6893-435f-8a2c-6a363b9514a8"
+              },
+              "target": {
+                "id": "5e0a861a-1e0c-4369-9f2a-34a1d87e5b0f"
+              },
+              "vertices": [
+                {
+                  "x": 303,
+                  "y": 142
+                }
+              ],
+              "id": "8e5e59d3-640c-45fb-801e-2433d22724ec",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.44308159229016075,
+                    "offset": -1.5059528524358932
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "Web Request\n(HTTP/S)",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 10,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "5e0a861a-1e0c-4369-9f2a-34a1d87e5b0f"
+              },
+              "target": {
+                "id": "636c635a-6893-435f-8a2c-6a363b9514a8"
+              },
+              "vertices": [
+                {
+                  "x": 337,
+                  "y": 218
+                }
+              ],
+              "id": "631532cd-2931-4501-9693-20449d6828ce",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.5511365712062577,
+                    "offset": 1.033920041789251
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "Web Request\n(HTTP/S)",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 11,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
             }
           ]
         },
         "size": {
           "height": 590,
-          "width": 790
+          "width": 996
         }
       }
     ]
